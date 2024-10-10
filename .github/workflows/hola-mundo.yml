@@ -1,4 +1,4 @@
-name: hola-mundo 
+name: hola-mund
 on:
   push:
     branches: ["main"]
