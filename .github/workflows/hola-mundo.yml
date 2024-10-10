@@ -1,18 +1,11 @@
 name: hola-mundo 
+
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 jobs:
-  build-python:
+  hola-mundo:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout-repo
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      
-      - name: Print Hello World
-        run: python hola_mundo.py
+      - name: Hola mundo
+        run: python  hola_mundo.py
