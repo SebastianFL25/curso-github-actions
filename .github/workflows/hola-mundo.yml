@@ -25,5 +25,8 @@ jobs:
   hola-mundo:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout-repo
+        uses: actions/checkout@v4
+        
       - name: Hola mundo
         run: python hola_mundo.py 
