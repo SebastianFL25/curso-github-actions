@@ -7,24 +7,24 @@ on:
     types: [opened, synchronize, reopened]
     paths:
       - '**.py'
-    issue_comment:
-      types:  [created, deleted]
-    workflow_dispatch:
-      inputs:
-        lenguaje_favorito:
-          description: 'Lenguaje favorito'
-          default: Python
-          required: true
-          type: choice
-          options:
-          - Python
-          - JavaScript
-          - Go
-        nombre:
-          description: 'Tu nombre'
-          required: true
-          default: Juan
-          type: string
+  issue_comment:
+    types:  [created, deleted]
+  workflow_dispatch:
+    inputs:
+      lenguaje_favorito:
+        description: 'Lenguaje favorito'
+        default: Python
+        required: true
+        type: choice
+        options:
+        - Python
+        - JavaScript
+        - Go
+      nombre:
+        description: 'Tu nombre'
+        required: true
+        default: Juan
+        type: string
     schedule:
       - cron:  '15 22 * * *'
 jobs:
