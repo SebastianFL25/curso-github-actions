@@ -2,7 +2,7 @@ name: Expresiones
 run-name: Aprendiendo expresiones
 
 on:
-  workflow_dispach:
+  workflow_dispatch:
     inputs:
       edad:
         descripcion: 'Edad'
