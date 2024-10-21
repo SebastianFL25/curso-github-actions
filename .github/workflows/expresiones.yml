@@ -1,0 +1,29 @@
+name: Expresiones
+run-name: Aprendiendo expresiones
+
+on:
+  workflow_dispach:
+    inputs:
+      edad:
+        descripcion: 'Edad'
+        required: true
+        type: integer
+      nombre:
+        descripcion: 'Tu Nombre'
+        required: false
+        default: 'None'
+        type: string
+
+jobs:
+  mayor:
+    if: ${{inputs.edad => 18 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Correr script para personas de 18 años o mayor
+        run: echo ${{inputs.nombre}} es mayor de edad
+  menor:
+    if: ${{inputs.edad < 18 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Correr script para personas menores de 18 añops
+        run: echo ${{inputs.nombre}} es menor de edad
