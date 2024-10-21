@@ -16,7 +16,7 @@ on:
 
 jobs:
   mayor:
-    if: ${{inputs.edad => 18 }}
+    if: ${{inputs.edad >= 18 }}
     runs-on: ubuntu-latest
     steps:
       - name: Correr script para personas de 18 años o mayor
