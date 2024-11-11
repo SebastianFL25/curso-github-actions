@@ -1,3 +1,5 @@
-FROM nginx:1.19-alpine
+FROM python:3.11-alpine 
 
-ADD hola_mundo.py /usr/share/nginx/python
+WORKDIR /app
+
+COPY ./hola_mundo.py /app
