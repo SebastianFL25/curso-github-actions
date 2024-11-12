@@ -19,4 +19,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: Prototipo/prueba:latest, Prototipo/prueba:${{github.run_number}}
+          tags: sebasfl25/prueba:latest, sebasfl25/prueba:${{github.run_number}}
